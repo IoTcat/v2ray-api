@@ -13,8 +13,6 @@ if(!count($res_account)){
 
 $res_vmess = db__getData($cnn, "vmess", "uid", $res_account[0]['uid']);
 
-
-
 $o = '';
 
 
@@ -24,8 +22,6 @@ foreach($res_vmess as $item){
 ';
     }
 }
-
-
 
 if(!$o){
     echo '';
