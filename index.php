@@ -24,7 +24,7 @@ foreach($res_vmess as $item){
     }
 }
 
-if(!$o){
+if(!$o && $_GET['auth'] == 'iotcat'){
 
     $json = json_decode(file_get_contents('/mnt/config/v2ray/uuid.json'));
     foreach($json as $item){
