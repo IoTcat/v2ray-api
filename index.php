@@ -69,13 +69,13 @@ function gCode($host, $uuid){
             "tls" => "tls"
         );
     }elseif($host == 'v-china.yimian.xyz'){
+        return 'vless://'.$uuid.'@v-china.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-china.yimian.xyz&path=%2f#China-Taian';
         $pack = array(
             "v" => "2",
             "ps" => "China-Taian",
             "add" => "v-china.yimian.xyz",
             "port" => "443",
             "id" => $uuid,
-            "aid" => "88",
             "net" => "ws",
             "type" => "none",
             "host" => $host,
