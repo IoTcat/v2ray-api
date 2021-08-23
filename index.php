@@ -68,21 +68,22 @@ function gCode($host, $uuid){
             "path" => "/",
             "tls" => "tls"
         );
+        //return 'vless://'.$uuid.'@v-usa.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-usa.yimian.xyz&path=%2f#Los_Angeles';
     }elseif($host == 'v-china.yimian.xyz'){
-        return 'vless://'.$uuid.'@v-china.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-china.yimian.xyz&path=%2f#China-Taian';
         $pack = array(
             "v" => "2",
             "ps" => "China-Taian",
             "add" => "v-china.yimian.xyz",
             "port" => "443",
             "id" => $uuid,
+            "aid" => "88",
             "net" => "ws",
             "type" => "none",
             "host" => $host,
             "path" => "/",
             "tls" => "tls"
         );
-    
+        //return 'vless://'.$uuid.'@v-china.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-china.yimian.xyz&path=%2f#China-Taian';
     }else{
         $pack = array(
             "v" => "2",
