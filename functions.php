@@ -285,8 +285,8 @@ function getIp()
 }
 
 /* obs sdk */
-require '/home/lib/huaweicloud-sdk-php-obs/vendor/autoload.php';
-require '/home/lib/huaweicloud-sdk-php-obs/obs-autoloader.php';
+require  __DIR__ . '/../../../lib/huaweicloud-sdk-php-obs/vendor/autoload.php';
+require  __DIR__ . '/../../../lib/huaweicloud-sdk-php-obs/obs-autoloader.php';
 
 use Obs\ObsClient;
 
