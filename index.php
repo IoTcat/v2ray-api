@@ -58,7 +58,7 @@ function gCode($host, $uuid){
         $pack = array(
             "v" => "2",
             "ps" => "Los_Angeles",
-            "add" => "usa.yimian.xyz",
+            "add" => "vmess.yimian.xyz",
             "port" => "443",
             "id" => $uuid,
             "aid" => "0",
