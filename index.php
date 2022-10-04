@@ -54,34 +54,36 @@ $o = '';
 function gCode($host, $uuid){
 
 
-    if($host == 'vmess.yimian.xyz'){
+    if($host == 'v-usa'){
         $pack = array(
             "v" => "2",
             "ps" => "Los_Angeles",
-            "add" => "vmess.yimian.xyz",
-            "port" => "443",
+            "add" => "net.yimian.xyz",
+            "port" => "80",
             "id" => $uuid,
             "aid" => "0",
+            "scy" => "auto",
             "net" => "ws",
             "type" => "none",
-            "host" => $host,
-            "path" => "/",
-            "tls" => "tls"
+            "host" => "net.yimian.xyz",
+            "path" => "/v-usa/abcdefg",
+            "tls" => ""
         );
         //return 'vless://'.$uuid.'@v-usa.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-usa.yimian.xyz&path=%2f#Los_Angeles';
-    }elseif($host == 'v-china.yimian.xyz'){
+    }elseif($host == 'v-china'){
         $pack = array(
             "v" => "2",
             "ps" => "China-Taian",
-            "add" => "v-china.yimian.xyz",
-            "port" => "443",
+            "add" => "net.yimian.xyz",
+            "port" => "80",
             "id" => $uuid,
             "aid" => "0",
+            "scy" => "auto",
             "net" => "ws",
             "type" => "none",
-            "host" => $host,
-            "path" => "/",
-            "tls" => "tls"
+            "host" => "net.yimian.xyz",
+            "path" => "/v-china/abcdefg",
+            "tls" => ""
         );
         //return 'vless://'.$uuid.'@v-china.yimian.xyz:443?encryption=none&security=tls&type=ws&host=v-china.yimian.xyz&path=%2f#China-Taian';
     }else{
