@@ -156,6 +156,11 @@ $oo.='      - DIRECT
     proxies:
       - DIRECT
       - Proxies-CN
+  - name: Ximalaya
+    type: select
+    proxies:
+      - DIRECT
+      - Proxies-CN
   - name: gfw
     type: select
     proxies:
@@ -206,6 +211,7 @@ rules:
  - DOMAIN-SUFFIX,bilibili.com,Bilibili
  - DOMAIN-SUFFIX,bilivideo.com,Bilibili
  - DOMAIN-SUFFIX,biliapi.net,Bilibili
+ - DOMAIN-SUFFIX,ximalaya.com,Ximalaya
  - RULE-SET,gfw,gfw
  - GEOIP,LAN,DIRECT
  - RULE-SET,private,DIRECT
